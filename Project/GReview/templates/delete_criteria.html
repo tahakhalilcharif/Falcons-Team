@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Criteria</title>
+</head>
+<body>
+    <h1>Delete Criteria</h1>
+
+    <p>Are you sure you want to delete the criteria "{{ criteria.name }}"?</p>
+
+    <form method="post" action="{% url 'delete_criteria' criteria.id %}">
+        {% csrf_token %}
+        <button type="submit">Yes, delete</button>
+    </form>
+
+    <a href="{% url 'criteria_list' %}">Cancel and Back to Criteria List</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criteria List</title>
+    <style>
+        .action-buttons {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleButtons(criteriaId) {
+            var buttons = document.getElementById(`action-buttons-${criteriaId}`);
+            buttons.style.display = buttons.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>Criteria List</h1>
+
+    <ul>
+        {% for criteria in criteria_list %}
+            <li>
+                <div onclick="toggleButtons('{{ criteria.id }}')">
+                    {{ criteria.name }} - {{ criteria.description }}
+                </div>
+                <div class="action-buttons" id="action-buttons-{{ criteria.id }}">
+                    <a href="{% url 'update_criteria' criteria.id %}">Update</a>
+                    <a href="{% url 'delete_criteria' criteria.id %}" onclick="return confirm('Are you sure you want to delete {{ criteria.name }}?')">Delete</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'add_criteria' %}">Add Criteria</a>
+</body>
+</html>

@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
+
+GITHUB_ACCESS_TOKEN = config('GITHUB_ACCESS_TOKEN')
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "GReview",
 ]
 
 MIDDLEWARE = [

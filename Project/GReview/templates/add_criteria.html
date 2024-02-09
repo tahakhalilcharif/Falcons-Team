@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Criteria</title>
+</head>
+<body>
+    <h1>Add Criteria</h1>
+
+    <form method="post" action="{% url 'add_criteria' %}">
+        {% csrf_token %}
+        
+        {{ form.as_p }}
+
+        <button type="submit">Add Criteria</button>
+    </form>
+
+    <a href="{% url 'criteria_list' %}">Back to Criteria List</a>
+</body>
+</html>
