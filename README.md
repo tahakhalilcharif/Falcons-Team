@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Code Review Github Action
 
 This action, authored by Frank Chen (@fxchen), improves your pull requests and code base by performing AI-assisted code reviews. It can analyze your pull requests and provide intelligent and insightful comments to help you maintain high code quality.
@@ -60,9 +59,6 @@ jobs:
 
 Configure an OPENAI_API_KEY secret inside your repository settings (Security > Secrets and variables > Actions) . https://github.com/{org}/{repo}/settings/secrets/actions
 - Add your OpenAI API key from the API key section (https://platform.openai.com/account/api-keys)
-
-![image](https://github.com/fxchen/code-review/assets/178719/3370b01a-6bb4-417d-a2ca-82507b5fc4b4)
-
 
 # Inputs
 
@@ -167,10 +163,4 @@ Configure "Workflow permissions" inside your repository settings (Code and autom
 
 ![image](https://github.com/fxchen/code-review/assets/178719/c04067c9-9476-4474-85ca-854893466807)
 
-=======
-# FalconsTeamGDGHack
-Repository for the Falcons Team participating in GDG Hack.
 
-# Important Rules:
-Each member should work in a branch named after their own name, for example, Ahmed.
->>>>>>> 2d6d761e37cea4d3563bd94e8c2ff84ee4e2f1dc
