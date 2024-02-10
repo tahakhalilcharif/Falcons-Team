@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+     /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    height: 100px; /* Adjust the height as needed */
+    padding: 0 20px; /* Adjust the padding as needed */
+  }
+  
+  .logo-container {
+    order: 2; /* Place the logo container at the end */
+    margin-left: auto; /* Push the logo container to the right */
+  }
+  
+  .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  

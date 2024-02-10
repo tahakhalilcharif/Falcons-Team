@@ -1,0 +1,43 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px; /* Adjust as needed */
+  }
+  
+  .content {
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px; /* Adjust as needed */
+    padding: 67px;
+  }
+
+  .task{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    
+  }
+  h1  {
+    margin: 0;
+  }
+.task p {
+    margin-left: 0;
+}
+  
+.navigation button-next {
+    margin-left: 80%;
+}
+
+
+  .rounded-line-bar {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  

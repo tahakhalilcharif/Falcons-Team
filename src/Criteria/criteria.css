@@ -1,0 +1,132 @@
+.navigation{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px; /* Adjust as needed */
+  }
+  
+  .content {
+    width: 70%;
+    height: 100vh;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px; /* Adjust as needed */
+    padding: 67px;
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    
+  }
+  .title h1  {
+    margin: 0;
+  }
+.title p {
+    margin-left: 0;
+}
+  
+.navigation{
+    position: relative;
+
+}
+
+  .rounded-line-bar {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+
+
+  .checkbox-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .checkbox-button:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  .checkbox-button:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  .checkbox-button:checked {
+    background-color: #007bff; /* Change background color when checked */
+    border-color: #007bff; /* Change border color when checked */
+  }
+  
+  .checkbox-button:checked::after {
+    content: '\u2713'; /* Unicode checkmark */
+    display: block;
+    color: #fff; /* Change checkmark color when checked */
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .addition input {
+     width: 80%;
+     height: 50%;
+     padding: 15px;
+     border-radius: 15px;
+     border: none;
+     outline-color: #ccc;
+  }
+  
+  .addition{
+   margin-left: 0px ;
+
+  }
+
+  .addition .btn-add{
+    background-color: #047DE5;
+    border-radius: 20px;
+  } 
+
+  .addition input:hover {
+    outline-color: #FCBC05;
+   
+ }
+
+  .check-square{
+    display: none;
+  }
+  .criteria-container{
+    border-radius: 40px;
+    border: #047DE5 solid 1px;
+    padding: 10px 20px;
+    color: #00417a;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .checked {
+   background-color:#00417a;
+   color: white;
+   width: auto;
+  }
+  
+  h5{
+    margin-top: 5px;
+  }
